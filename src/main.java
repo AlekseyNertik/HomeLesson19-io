@@ -49,7 +49,7 @@ System.out.println("\n\n2. Сшить 5 файлов");
                 if (80<=i & i<90) arr1[i]=8;
                 if (90<=i & i<100) arr1[i]=9;
             }
-            out2.write(arr1);//собственно запись в файлы длина 1000 байт
+            out2.write(arr1);//собственно запись в файлы длиной 1000 байт
             out3.write(arr1);
             out4.write(arr1);
             out5.write(arr1);
@@ -116,9 +116,9 @@ System.out.println("\n\n2. Сшить 5 файлов");
                     ask = scanner.nextInt();
                     if (ask==1) { // если продолжаем читать
                         currentByte=0; // сброс счетчика
-                        a = System.currentTimeMillis(); //снова засекаю время
+                        a = System.currentTimeMillis(); //снова засекаю время для следующей итерации
                     }
-                    else {   // если прекращаем чтение
+                    else {   // если больше чтитать не хочу
                         file101.close();
                         break;
                     }
@@ -129,8 +129,5 @@ System.out.println("\n\n2. Сшить 5 файлов");
             e.printStackTrace();
         }
 
-
     }
-
-
 }
